@@ -1,7 +1,6 @@
 #! /bin/bash
 
-cat $1 | 
-tr '[:upper:]' '[:lower:]' |
+cat $1 |
 tr -s '[:space:]' '\n' |
 tr -d '[:punct:]' |
 sort | 
